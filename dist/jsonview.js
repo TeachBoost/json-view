@@ -40,9 +40,9 @@ function createExpandedElement(node) {
   const iElem = createElement('i');
 
   if (node.expanded) {
-    iElem.className = 'fas fa-caret-down';
+    iElem.className = 'fa fa-caret-down';
   } else {
-    iElem.className = 'fas fa-caret-right';
+    iElem.className = 'fa fa-caret-right';
   }
 
   const caretElem = createElement('div', {
@@ -155,12 +155,12 @@ function createNode() {
     depth: 0,
 
     setCaretIconRight() {
-      const icon = this.elem.querySelector('.fas');
+      const icon = this.elem.querySelector('.fa');
       icon.classList.replace('fa-caret-down', 'fa-caret-right');
     },
 
     setCaretIconDown() {
-      const icon = this.elem.querySelector('.fas');
+      const icon = this.elem.querySelector('.fa');
       icon.classList.replace('fa-caret-right', 'fa-caret-down');
     },
 

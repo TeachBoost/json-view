@@ -40,9 +40,9 @@ function createExpandedElement(node) {
   const iElem = createElement('i');
 
   if (node.expanded) {
-    iElem.className = 'fas fa-caret-down';
+    iElem.className = 'fa fa-caret-down';
   } else {
-    iElem.className = 'fas fa-caret-right';
+    iElem.className = 'fa fa-caret-right';
   }
 
   const caretElem = createElement('div', {
